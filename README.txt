@@ -1,3 +1,6 @@
-Put your Java source files and assorted packages here; this is the root of your project from Java's perspective.
-When using packages, don't prefix them with src.main.java, it's not needed. Anything stored here will be put
-into the top level of the packaged JAR file.
+To assemble a jar file for your project, run the "jar" gradle task, either through IntelliJ or by doing
+`gradle jar` on a terminal. Gradle will automatically download all dependencies needed to compile your jar file,
+which will be stored in the build/libs folder.
+
+Make sure to edit the main class attribute the build.gradle file, you'll need to change it in order to obtain
+a working jar file.
